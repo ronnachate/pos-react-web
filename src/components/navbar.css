@@ -1,0 +1,17 @@
+.navbar-logo {
+    pointer-events: none;
+    width: 45px;
+    height: 45px;
+  }
+
+  .navbar-nav .nav-avatar {
+    width: 45px;
+    height: 45px;
+  }
+  .nav-avatar-dropdown .dropdown-menu {
+    padding-bottom: 20px;
+    margin-left: -125px;
+  }
+  .custom_nav_link {
+    align-self: flex-end!important;
+  }
