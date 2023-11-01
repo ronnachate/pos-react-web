@@ -43,7 +43,7 @@ const NavBar = () => {
             <FaList className='menu-icon'/> 
               Products
             </Navbar.Brand>
-            <Navbar.Brand href="/setting" className='d-flex gap-2'>
+            <Navbar.Brand href="/setting/user" className='d-flex gap-2'>
             <FaWrench className='menu-icon'/> 
               Setting
             </Navbar.Brand>

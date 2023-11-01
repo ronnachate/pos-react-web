@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 import './sidebar.css';
 
 function Sidebar({menuItems}) {
-  console.log(menuItems);
-
   return (
     <>
       <div className="position-sticky pt-3 ms-2">
