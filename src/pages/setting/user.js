@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Sidebar from '../../components/Sidebar';
 import Nav from 'react-bootstrap/Nav';
+import { Button, Table } from 'react-bootstrap';
 import { getUsers } from '../../services/userService';
 
 import './user.css';
 
 const UserRow = ({ users }) => {
-  console.log(users);
   return (
     <>
       {users.map((user, i) => (
         <tr key={i} className="align-middle">
-          <td>{i}</td>
+          <td>{i + 1}</td>
           <td>{user.id}</td>
           <td>{user.username}</td>
           <td>{user.email}</td>
@@ -28,7 +28,7 @@ const UserRow = ({ users }) => {
 const TableUser = ({ users }) => {
   return (
     <>
-      <table className="table table-striped table-sm">
+      <Table className="table table-striped table-sm">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -41,7 +41,23 @@ const TableUser = ({ users }) => {
         <tbody>
           <UserRow users={users} />
         </tbody>
-      </table>
+      </Table>
+    </>
+  );
+};
+
+const FilterArea = () => {
+  return (
+    <>
+      <div className="d-flex justify-content-end flex-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <div className="btn-toolbar mb-2 mb-md-0">
+          <div className="btn-group me-2">
+            <Button type="button" variant="success" className="btn btn-sm">
+              Create
+            </Button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
@@ -64,7 +80,9 @@ const User = () => {
     })();
 
     // Cleanup callback as the component unmounts.
-    return () => { isMounted = false; };
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (
@@ -81,18 +99,7 @@ const User = () => {
         </Nav>
         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div className="container-fluid">
-            <div className="d-flex justify-content-end flex-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-              <div className="btn-toolbar mb-2 mb-md-0">
-                <div className="btn-group me-2">
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-outline-secondary"
-                  >
-                    Create
-                  </button>
-                </div>
-              </div>
-            </div>
+            <FilterArea />
             <div className="table-responsive">
               <TableUser users={users} />
             </div>
