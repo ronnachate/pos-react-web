@@ -4,7 +4,7 @@ import './App.css';
 
 import MainLayout from './layout/Layout';
 import Index from './pages/index.js';
-import User from './pages/user';
+import User from './pages/setting/user';
 import Login from './pages/login/login';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Index />} />
-          <Route path="user" element={<User />} />
+          <Route path="/setting/user" element={<User />} />
         </Route>
         <Route path="/login" element={<Login />} />
       </Routes>
