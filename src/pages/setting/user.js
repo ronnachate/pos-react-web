@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Sidebar from '../../components/Sidebar';
 import Nav from 'react-bootstrap/Nav';
 import { Button, Table } from 'react-bootstrap';
-import { getUsers } from '../../services/userService';
+import useAuth from '../../hooks/useAuth';
 
 import './user.css';
 
@@ -64,6 +64,8 @@ const FilterArea = () => {
 
 const User = () => {
   const [users, setUsers] = useState([]);
+
+  const { getUsers } = useAuth();
 
   useEffect(() => {
     let isMounted = true;
