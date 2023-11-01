@@ -11,7 +11,7 @@ import Login from './pages/login/login';
 function App() {
   return (
     <>
-      <AuthProvider>
+      {/* <AuthProvider> */}
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Index />} />
@@ -19,7 +19,7 @@ function App() {
           </Route>
           <Route path="/login" element={<Login />} />
         </Routes>
-      </AuthProvider>
+      {/* </AuthProvider> */}
     </>
   );
 }
