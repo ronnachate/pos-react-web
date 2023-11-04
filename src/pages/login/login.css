@@ -10,7 +10,7 @@ body {
 }
 
 .login-container {
-  background: url(../../../public/images/sign_in_bg.png);
+  background: url(../../../public/images/sign_in_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
