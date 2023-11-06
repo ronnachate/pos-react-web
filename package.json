@@ -1,7 +1,10 @@
 {
-  "name": "newapp",
-  "version": "0.1.0",
+  "name": "pos-react-web",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Ronnachate Gate",
   "private": true,
+  "license": "GNU GPL V3",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
