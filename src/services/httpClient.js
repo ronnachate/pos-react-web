@@ -3,8 +3,7 @@ import { getLoginSession, refreshToken } from './authService';
 
 const keyUser = 'auth-user';
 
-//export const api_path = process.env.BASE_API_URL + '/api/v1';
-export const api_path = 'http://localhost:3001/api/v1';
+export const api_path = process.env.REACT_APP_API_URL + '/v1';
 
 const httpClient = axios.create();
 httpClient.interceptors.request.use(
