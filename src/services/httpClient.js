@@ -1,16 +1,16 @@
 import axios from 'axios';
+import { getLoginSession } from './authService';
 
-//let applicationKey = process.env.APPLICATION_KEY;
-let applicationKey = 'ae9f62205182411d82e2b3ce2bfae7fd';
+const keyUser = 'auth-user';
 
 //export const api_path = process.env.BASE_API_URL + '/api/v1';
-export const api_path = 'https://api.nerf.prionize.com/api/v1';
+export const api_path = 'http://localhost:3001/api/v1';
 
 const httpClient = axios.create();
 httpClient.interceptors.request.use(
   async (config) => {
     config.headers = {
-      applicationkey: applicationKey,
+      Authorization: `Bearer ${getLoginSession().accessToken}`,
     };
     return config;
   },

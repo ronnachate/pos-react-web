@@ -1,7 +1,7 @@
 import httpClient, { api_path } from './httpClient'
 const _serverUrl = api_path;
 
-const baseUrl = `${_serverUrl}/user`;
+const baseUrl = `${_serverUrl}/users`;
 export const getUsers = async (page = 1, limit = 10, q) => {
     let url = `${baseUrl}?page=${page}&rows=${limit}`;
     if (q) {

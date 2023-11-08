@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
+import axios from "axios";
 
+const API_URL = "http://localhost:3001/api";
 const keyUser = 'auth-user';
 
 function newToken() {
@@ -13,16 +15,18 @@ function getLoginSession() {
   return JSON.parse(user);
 }
 
-function setLoginSession(user, token) {
+function setLoginSession(user, accessToken, refreshToken) {
 
+  // Remove password from the user object
   const { password, ...rest } = user;
 
   // Merge token to the final object.
   const merged = {
     ...rest,
-    token,
+    accessToken,
+    refreshToken,
   };
-
+  console.log(merged);
   localStorage.setItem(keyUser, JSON.stringify(merged));
 }
 
@@ -31,18 +35,18 @@ function isAuth() {
 }
 
 async function login(username, password) {
-  const user = {
-    id: uuidv4(),
+  return axios
+  .post(`${API_URL}/auth/signin`, {
     username,
-    name: 'John Doe',
-    email: 'john@do.com',
-  };
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const token = newToken();
-      setLoginSession(user, token);
-      return resolve(token);
-    }, 2000);
+    password
+  })
+  .then(response => {
+    if (response.data.accessToken) {
+      //store in local storage
+      setLoginSession({ username }, response.data.accessToken, response.data.refreshToken);
+    }
+
+    return response.data;
   });
 }
 
