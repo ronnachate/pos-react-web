@@ -1,13 +1,8 @@
-import { v4 as uuidv4 } from 'uuid';
 import axios from "axios";
 
 const API_URL = "http://localhost:3001/api";
 const keyUser = 'auth-user';
 
-function newToken() {
-    //simulate JWT token
-  return uuidv4();
-}
 
 function getLoginSession() {
   const user = localStorage.getItem(keyUser);
@@ -26,7 +21,6 @@ function setLoginSession(user, accessToken, refreshToken) {
     accessToken,
     refreshToken,
   };
-  console.log(merged);
   localStorage.setItem(keyUser, JSON.stringify(merged));
 }
 
@@ -50,6 +44,22 @@ async function login(username, password) {
   });
 }
 
+async function refreshToken() {
+  const { username, refreshToken } = getLoginSession();
+  return axios
+  .post(`${API_URL}/auth/refresh-token`, {
+    refreshToken
+  })
+  .then(response => {
+    if (response.data.accessToken) {
+      //store in local storage
+      setLoginSession({ username }, response.data.accessToken, response.data.refreshToken);
+    }
+
+    return response.data;
+  });
+}
+
 async function logout() {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -60,6 +70,6 @@ async function logout() {
   }
   
   export {
-    getLoginSession, isAuth, login, logout
+    getLoginSession, isAuth, login, refreshToken, logout
   };
   
