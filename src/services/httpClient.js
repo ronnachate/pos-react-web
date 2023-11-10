@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { getLoginSession, refreshToken } from './authService';
 
-const keyUser = 'auth-user';
-
 export const api_path = process.env.REACT_APP_API_URL + '/v1';
 
 const httpClient = axios.create();

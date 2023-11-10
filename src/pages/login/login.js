@@ -1,7 +1,6 @@
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { useNavigate } from 'react-router-dom';
 import { Button, Form, Image } from 'react-bootstrap';
 
 import useAuth from '../../hooks/useAuth';
