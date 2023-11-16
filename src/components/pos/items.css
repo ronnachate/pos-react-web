@@ -33,7 +33,7 @@
 }
 
 .basket-items li h3 .item-decrease {
-  background: '#ff4141';
+  background-color: #e3ad1a;
   color: var(--secondary);
   min-width: 15px;
   height: 20px;
