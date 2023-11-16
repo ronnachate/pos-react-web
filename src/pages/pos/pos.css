@@ -1,0 +1,28 @@
+.main-container {
+  height: 90vh;
+  width: 100vw;
+}
+
+.pos_item_container {
+  padding-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.basket_item_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary);
+}
+
+@media (min-width: 768px) {
+  .order_section {
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    height: 100%;
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import { Nav, Navbar, NavDropdown, Image } from 'react-bootstrap';
@@ -8,6 +8,14 @@ import './navbar.css';
 
 const NavBar = () => {
   const navigate = useNavigate();
+  let time  = new Date().toTimeString()
+
+  const [ctime,setTime] = useState(time)
+  const UpdateTime=()=>{
+    time =  new Date().toLocaleTimeString()
+    setTime(time)
+  }
+  setInterval(UpdateTime)
 
   const handleLogout = async (e) => {
     e.preventDefault();
@@ -17,8 +25,8 @@ const NavBar = () => {
   return (
     <Navbar variant="dark" bg="dark" expand="lg" className="header-navbar">
       <Container fluid>
-        <Navbar.Brand href="/">
-          <Image src="/images/logo.png" fluid className="navbar-logo" />
+        <Navbar.Brand className='clock-display'>
+          <h3>{ctime}</h3>
         </Navbar.Brand>
 
         <Navbar.Collapse className="w-100 d-flex justify-content-end">

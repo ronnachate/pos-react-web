@@ -93,7 +93,7 @@ const User = () => {
       <Helmet>
         <title>User list</title>
       </Helmet>
-      <div className="row user-container bg-light ">
+      <div className="row user-container bg-light">
         <Nav
           id="sidebarMenu"
           className="col-md-3 col-lg-2 d-md-block sidebar collapse"

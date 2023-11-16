@@ -1,3 +1,36 @@
+*,
+body,
+html,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+li {
+  font-family: 'Google Sans';
+}
+
+:root {
+  --white: #fff !important;
+  --primary: #009946 !important;
+  --secondary: #26272c !important;
+  --bg-color: #131218;
+  --bg_color2: #35363c;
+  --card_bg: #1d1e25;
+  --transparent: rgba(0, 0, 0, 0);
+  --text-light: #686869;
+  --text-light2: #848792;
+  --text-dark: #4f5059;
+  --red_color: #ff4141;
+  --green_color: #38f075;
+  --yelow_color: #ffa228;
+  --orange_color: #e93612;
+}
+
 .App {
   text-align: center;
 }

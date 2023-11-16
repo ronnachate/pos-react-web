@@ -7,6 +7,7 @@ import MainLayout from './layout/Layout';
 import Index from './pages/index.js';
 import User from './pages/setting/user';
 import Login from './pages/login/login';
+import POS from './pages/pos/pos.js';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route index element={<Index />} />
+            <Route index element={<POS />} />
+            <Route path="/pos" element={<POS />} />
             <Route path="/setting/user" element={<User />} />
           </Route>
           <Route path="/login" element={<Login />} />

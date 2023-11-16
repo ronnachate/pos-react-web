@@ -1,0 +1,64 @@
+.basket-order_summary {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.basket-order_summary .amount_details {
+  padding: 0 18px;
+  padding-bottom: 10px;
+}
+
+.basket-order_summary .amount_details h2 {
+  margin: 0;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px 0;
+}
+
+.basket-order_summary .amount_details h2 span.text {
+  width: 100%;
+  display: block;
+  max-width: 76%;
+}
+
+.obasket-order_summary .amount_payble {
+  background: var(--bg_color2);
+  padding: 0 18px;
+  height: 40px;
+}
+
+.basket-order_summary .amount_payble h2 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+}
+
+.basket-order_summary .amount_payble h2 span.text {
+  width: 100%;
+  display: block;
+  max-width: 76%;
+}
+
+.table-selector {
+  padding-bottom: 30px;
+}
+
+.basket-order-prop {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 40px;
+  background-color: #2e2e32;
+  padding-top: 5px;
+}
+
+.basket-order-prop select {
+  width: 95%;
+}

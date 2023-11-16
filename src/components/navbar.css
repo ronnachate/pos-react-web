@@ -3,6 +3,13 @@
   width: 45px;
   height: 45px;
 }
+.clock-display {
+  border: 1px solid;
+}
+.clock-display h3 {
+  padding-left: 5px !important;
+  padding-right: 5px;
+}
 .header-navbar {
   min-height: 80px;
 }

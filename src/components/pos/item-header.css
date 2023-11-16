@@ -1,0 +1,14 @@
+.basket-item-header {
+  background: var(--bg_color2);
+  padding: 0 18px;
+  margin-bottom: 4px;
+}
+
+.basket-item-header .row h2 {
+  margin: 0;
+  color: var(--text-light2);
+  font-size: 1rem;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+}
