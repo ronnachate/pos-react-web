@@ -45,16 +45,16 @@
 }
 
 .basket-items li h3 .item-increase {
-    background-color: #198754;
-    color: var(--secondary);
-    min-width: 15px;
-    height: 20px;
-    border-radius: 2px;
-    text-align: center;
-    line-height: 15px;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
+  background-color: #198754;
+  color: var(--secondary);
+  min-width: 15px;
+  height: 20px;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
 .basket-items li h3 strong {
   min-width: 33px;
