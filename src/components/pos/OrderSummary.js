@@ -1,7 +1,7 @@
-import OrderAmount from './OrderAmount';
-import OrderTypeSelector from './OrderTypeSelector';
-import TableSelector from './TableSelector';
-import ControlButtons from './ControlButtons';
+import OrderAmount from './order/OrderAmount';
+import OrderTypeSelector from './order/OrderTypeSelector';
+import TableSelector from './order/TableSelector';
+import ControlButtons from './order/ControlButtons';
 
 import './order-summary.css';
 
