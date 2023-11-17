@@ -1,0 +1,23 @@
+.pos-search-input-group {
+    width: 95% !important;
+  }
+  
+  .pos-search-input-group input {
+    border: 0;
+    background-color: #474849 !important;
+    color: white !important;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+  }
+  
+  .pos-search-input-group input::placeholder {
+    color: rgb(149, 143, 143) !important;
+  }
+  
+  .pos-search-input-group span {
+    cursor: pointer;
+    border: 0;
+    background-color: #a3a3a2 !important;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }

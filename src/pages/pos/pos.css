@@ -18,10 +18,11 @@
 
 @media (min-width: 768px) {
   .order_section {
+    padding-top: 10px;
+    background-color: #27272c;
     width: 100%;
     max-width: 450px;
     position: fixed;
-    top: 100px;
     left: 0;
     height: 100%;
   }
