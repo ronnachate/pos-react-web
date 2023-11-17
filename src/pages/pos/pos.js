@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-
-import './pos.css';
-import { Container } from 'react-bootstrap';
-
-import Items from '../../components/pos/ordering/Items';
-import ItemHeader from '../../components/pos/ordering/ItemHeader';
 import Ordering from '../../components/pos/Ordering';
 import Products from '../../components/pos/Product';
+
+import './pos.css';
 
 const POS = () => {
   const [items, setItems] = useState(MOCK_ITEMS);
