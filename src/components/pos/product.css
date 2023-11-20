@@ -3,7 +3,7 @@
   background-color: #1d1d1f;
   top: 80px;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   max-width: calc(100% - 450px);
 }

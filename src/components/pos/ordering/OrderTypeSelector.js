@@ -4,7 +4,7 @@ const OrderTypeSelector = () => {
   return (
     <div className="row basket-order-prop">
       <div className="col-6 text-center">
-        <lable>ประเภท</lable>
+        <Form.Label>ประเภท</Form.Label>
       </div>
       <div className="col-6">
         <Form.Select>

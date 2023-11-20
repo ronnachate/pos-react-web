@@ -5,7 +5,7 @@ const NewTableForm = () => {
     <div className="table-box">
       <div className="row order-prop">
         <div className="col-6 text-center">
-          <lable>โต้ะ</lable>
+          <Form.Label>โต้ะ</Form.Label>
         </div>
         <div className="col-6">
           <Form.Text className="form-control" id="tableName" />

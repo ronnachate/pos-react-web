@@ -5,7 +5,7 @@ const Items = ({ items }) => {
   return (
     <ul className="basket-items">
       {items.map((item, i) => (
-        <li>
+        <li key={item.id}>
           <div className="row">
             <div className="col-4">
               <h4>{item.name}</h4>

@@ -9,7 +9,7 @@ const TableSelector = (props) => {
       <div className="table-selector">
         <div className="row basket-order-prop">
           <div className="col-6 text-center">
-            <lable>โต้ะ</lable>
+            <Form.Label>โต้ะ</Form.Label>
           </div>
           <div className="col-6">
             <Form.Select>

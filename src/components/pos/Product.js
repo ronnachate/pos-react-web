@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import SearchBox from './product/SearchBox';
 import Categories from './product/Categories';
 import ProductList from './product/ProductList';
+import ProductDetail from './product/ProductDetail';
 
 import './product.css';
 const Products = ({ categories }) => {
   const [products, setProducts] = useState(MOCK_PRODUCT);
+  const [product, setProduct] = useState(MOCK_PRODUCT[0]);
   return (
     <div className="pos_product_section">
       <Categories categories={categories} />
       <SearchBox />
-      <ProductList products={products} />
+      {product ?  <ProductDetail product={product} /> : <ProductList products={products} /> }
     </div>
   );
 };

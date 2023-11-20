@@ -6,7 +6,7 @@ const Categories = ({ categories }) => {
       <div className="category-container mt-3">
         <div className="nav">
           {categories.map((category, i) => (
-            <a className="nav-item nav-link category-item" aria-selected="true">
+            <a className="nav-item nav-link category-item" aria-selected="true" key={category.id}>
               <h5>{category.name}</h5>
             </a>
           ))}

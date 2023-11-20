@@ -1,0 +1,22 @@
+.product-detail-sidebar {
+    padding-left: 40px;
+}
+
+.product-detail-sidebar .product-sidebar-detail {
+    background-color: #27272c;
+    color: white;
+
+}
+
+.product-detail-sidebar .product-sidebar-detail img {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.product-detail-sidebar .product-sidebar-detail .product-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 20px;
+}

@@ -23,7 +23,7 @@
     width: 100%;
     max-width: 450px;
     position: fixed;
-    left: 0;
+    right: 0;
     height: 100%;
   }
 }
