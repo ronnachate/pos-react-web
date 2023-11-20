@@ -1,3 +1,6 @@
 .product-order .product-order-detail {
   background-color: #27272c;
 }
+.product-order .product-order-detail .option-row {
+  width: 80%;
+}

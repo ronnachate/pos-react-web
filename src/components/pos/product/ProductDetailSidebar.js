@@ -16,7 +16,7 @@ const ProductDetailSidebar = ({ product }) => {
           <Card.Text className="product-name ms-3">{product.name}</Card.Text>
           <Stack gap={3} className="price-rate">
             {product.rates.map((rate) => (
-              <ProducPriceRate rate={rate} />
+              <ProducPriceRate rate={rate} key={rate.id} />
             ))}
           </Stack>
         </Card.Body>

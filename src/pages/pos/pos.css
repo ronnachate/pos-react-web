@@ -27,3 +27,16 @@
     height: 100%;
   }
 }
+
+.pos_container select {
+  background-color: #a09f9d;
+}
+
+.pos_container .form-check-input {
+  background-color: #a09f9d;
+}
+
+.pos_container .form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+}

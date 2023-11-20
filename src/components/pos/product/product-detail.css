@@ -1,5 +1,6 @@
 .product-detail {
     position: absolute;
+    bottom: 0;
+    top: 180px;
     padding: 10px 10px 30px 30px;
-
 }
