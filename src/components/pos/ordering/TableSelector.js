@@ -12,7 +12,7 @@ const TableSelector = (props) => {
             <Form.Label>โต้ะ</Form.Label>
           </div>
           <div className="col-6">
-            <Form.Select>
+            <Form.Select size="sm">
               <option value="">เลือกโต้ะ</option>
               <option value="3142">TAT</option>
             </Form.Select>

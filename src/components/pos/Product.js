@@ -23,33 +23,153 @@ const MOCK_PRODUCT = [
   {
     name: 'อเมริกาโน่เย็น',
     price: 50,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
   {
     name: 'เอสเปรสโซ่ร้อน',
     price: 45,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
   {
     name: 'ลาเต้ร้อน',
     price: 55,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
   {
     name: 'คาปูชิโน่ร้อน',
     price: 55,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
   {
     name: 'มอคค่าร้อน',
     price: 60,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
   {
     name: 'Best Buddy stout',
     price: 170,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
   {
     name: 'Best Buddy Rosse',
     price: 170,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
   {
     name: 'Wizard WeizenXIPA',
     price: 195,
+    rates: [
+      {
+          id : 1,
+          name : 'Normal Price',
+          price : 55.00,
+      },
+      {   id: 2,
+          name : 'Member Price',
+          price : 50.00,
+      },
+      {   id: 3,
+          name : 'Internal Price',
+          price : 45.00,
+      }
+    ]
   },
 ];
