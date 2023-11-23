@@ -1,6 +1,21 @@
 .product-order .product-order-detail {
   background-color: #27272c;
 }
+
+.product-order .product-order-detail .card-text {
+  font-weight: 600;
+}
+
 .product-order .product-order-detail .option-row {
+  font-size: 1.2rem;
   width: 80%;
+}
+
+.product-order .product-order-detail .card-footer .total-text {
+  font-weight: 600;
+}
+
+.product-order .product-order-detail .card-footer button {
+  min-width: 70px;
+  border-radius: 3px;
 }

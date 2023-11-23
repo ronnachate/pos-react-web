@@ -20,3 +20,12 @@
     margin: 0;
     padding-bottom: 20px;
 }
+
+.product-detail-sidebar .product-sidebar-detail .price-rate div.d-flex {
+    border: 1px solid;
+}
+
+.product-detail-sidebar .product-sidebar-detail .price-rate .price-text {
+    font-weight: 600;
+    margin: 0;
+}
